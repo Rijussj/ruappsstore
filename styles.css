@@ -1052,3 +1052,128 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* Q&A Section Styles */
+.qa-section {
+    padding: 80px 0;
+    position: relative;
+    border-top: 1px solid var(--border-color);
+}
+
+.section-title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.section-title span {
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto 48px;
+    font-size: 15px;
+}
+
+.qa-grid {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.qa-card {
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.qa-card:hover {
+    border-color: var(--border-color-active);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+[data-theme="light"] .qa-card:hover {
+    background: rgba(0, 0, 0, 0.01);
+}
+
+.qa-trigger {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    text-align: left;
+    color: var(--text-primary);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.qa-trigger .chevron {
+    width: 20px;
+    height: 20px;
+    fill: var(--text-muted);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.qa-card.active .qa-trigger .chevron {
+    transform: rotate(180deg);
+    fill: var(--accent-primary);
+}
+
+.qa-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1), padding 0.35s ease;
+    padding: 0 24px;
+}
+
+.qa-card.active .qa-content {
+    max-height: 200px;
+    padding-bottom: 20px;
+}
+
+.qa-content p {
+    color: var(--text-secondary);
+    font-size: 14.5px;
+    line-height: 1.6;
+}
+
+.support-email {
+    color: var(--accent-primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.support-email:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 28px;
+    }
+    .qa-trigger {
+        padding: 16px 20px;
+        font-size: 15px;
+    }
+    .qa-content {
+        padding: 0 20px;
+    }
+    .qa-card.active .qa-content {
+        padding-bottom: 16px;
+    }
+}
+

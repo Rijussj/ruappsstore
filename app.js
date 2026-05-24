@@ -660,6 +660,9 @@ const APP_ICONS = {
     pdfsam: `<img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/PDFsam_Basic_logo.svg" alt="PDFsam Icon">`,
     etcher: `<img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Etcher-icon.png" alt="Etcher Icon">`,
     rubrowser: `<img src="https://img.utdstc.com/icon/e8c/d71/e8cd71e498baad2aa8a6e29817f5fa7f426b7e29830da26c4478a0652742aadf:100" alt="RUBrowser Icon">`,
+    powertoys: `<img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/2020_PowerToys_Icon.svg" alt="PowerToys Icon">`,
+    eartrumpet: `<img src="https://cdn.jsdelivr.net/npm/simple-icons@v12.0.0/icons/eartrumpet.svg" alt="EarTrumpet Icon">`,
+    winget: `<img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Windows_Package_Manager_logo.svg" alt="WinGet Icon">`,
     default: `<svg viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>`
 };
 
@@ -761,7 +764,7 @@ function updateThemeBtn() {
 // Dynamic App Database Load & Local Storage Merge
 async function loadApps() {
     try {
-        const response = await fetch('apps.json');
+        const response = await fetch('apps.json?v=2.1.0');
         const data = await response.json();
         const localApps = JSON.parse(localStorage.getItem("submitted_apps")) || [];
         apps = [...data, ...localApps];
@@ -916,62 +919,7 @@ function initEventListeners() {
         filterAndSortApps();
     });
 
-    // Submit App Form Modal Setup
-    const submitModal = document.getElementById("submitModal");
-    const openSubmitBtn = document.getElementById("openSubmitModalBtn");
-    const closeSubmitBtn = document.getElementById("closeSubmitModal");
-    const submitForm = document.getElementById("submitAppForm");
 
-    openSubmitBtn.addEventListener("click", () => {
-        submitModal.classList.add("active");
-    });
-
-    closeSubmitBtn.addEventListener("click", () => {
-        submitModal.classList.remove("active");
-        submitForm.reset();
-    });
-
-    submitModal.addEventListener("click", (e) => {
-        if (e.target === submitModal) {
-            submitModal.classList.remove("active");
-            submitForm.reset();
-        }
-    });
-
-    // Submit Action Logic
-    submitForm.addEventListener("submit", (e) => {
-        e.preventDefault();
-        
-        const newApp = {
-            id: document.getElementById("appName").value.toLowerCase().replace(/[^a-z0-9]/g, "-"),
-            name: document.getElementById("appName").value.trim(),
-            category: document.getElementById("appCategory").value,
-            developer: document.getElementById("appDeveloper").value.trim(),
-            shortDesc: document.getElementById("appDesc").value.trim(),
-            longDesc: document.getElementById("appDesc").value.trim() + " Submitted by the community. Fully vetted open source code repo checked for compilation, packaging integrity, and licensing specifications.",
-            license: document.getElementById("appLicense").value.trim(),
-            version: "v1.0.0",
-            downloads: Math.floor(Math.random() * 500) + 10,
-            rating: parseFloat((Math.random() * (5.0 - 4.0) + 4.0).toFixed(1)),
-            repo: document.getElementById("appRepo").value.trim(),
-            downloadUrl: document.getElementById("appDownload").value.trim() || document.getElementById("appRepo").value.trim(),
-            updated: new Date().toISOString().split('T')[0]
-        };
-
-        // Save to LocalStorage
-        const localApps = JSON.parse(localStorage.getItem("submitted_apps")) || [];
-        localApps.unshift(newApp);
-        localStorage.setItem("submitted_apps", JSON.stringify(localApps));
-
-        // Reload lists and render
-        loadApps();
-        filterAndSortApps();
-        
-        // UI reset & Feedback
-        submitModal.classList.remove("active");
-        submitForm.reset();
-        showToast(`"${newApp.name}" submitted successfully! Vetted by community admin.`);
-    });
 
     // Detail Modal Close triggers
     const detailModal = document.getElementById("detailModal");
@@ -1154,3 +1102,5 @@ function incrementDownloads(appId) {
     loadApps();
     filterAndSortApps();
 }
+
+
