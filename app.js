@@ -913,6 +913,216 @@ const INITIAL_APPS = [
         repo: "https://www.google.com/chrome",
         downloadUrl: "https://dl.google.com/tag/s/appguid%3D%7B8A282428-5A77-4C36-8341-4A877175A384%7D/update2/installers/ChromeSetup.exe",
         updated: "2026-05-24"
+    },
+    {
+        id: "itunes",
+        name: "iTunes",
+        category: "Multimedia",
+        developer: "Apple Inc.",
+        shortDesc: "Official Apple media player and device management tool for Windows.",
+        longDesc: "iTunes for Windows is the official software to play your music and video library, back up and manage iOS devices, and sync content (photos, contacts, calendars) from your PC to your iPhone, iPad, or iPod.",
+        license: "Proprietary / Freeware",
+        version: "v12.13.2",
+        downloads: 1420000,
+        rating: 4.5,
+        repo: "https://www.apple.com/itunes/",
+        downloadUrl: "https://www.apple.com/itunes/download/win64",
+        updated: "2026-03-02"
+    },
+    {
+        id: "icloud",
+        name: "iCloud",
+        category: "Productivity",
+        developer: "Apple Inc.",
+        shortDesc: "Official Apple cloud storage utility to sync photos, files, and mail on Windows.",
+        longDesc: "iCloud for Windows allows you to access your photos, videos, mail, calendar, files, and other key information from your Apple devices directly on your Windows PC. This standalone installer is required for advanced integrations (like AltStore).",
+        license: "Proprietary / Freeware",
+        version: "v11.6",
+        downloads: 820000,
+        rating: 4.3,
+        repo: "https://www.apple.com/icloud/",
+        downloadUrl: "https://updates.cdn-apple.com/2020/windows/001-39935-20200911-1A70AA56-F448-11EA-8CC0-99D41950005E/iCloudSetup.exe",
+        updated: "2020-09-21"
+    },
+    {
+        id: "apple-music",
+        name: "Apple Music",
+        category: "Multimedia",
+        developer: "Apple Inc.",
+        shortDesc: "Stream over 100 million songs ad-free directly on your Windows PC.",
+        longDesc: "Apple Music is Apple's premium music streaming service client for Windows 10/11. Stream millions of songs, listen to curated playlists, follow lyrics in real-time, and download your favorite audio tracks for offline playback.",
+        license: "Proprietary / Freeware",
+        version: "v1.4.0",
+        downloads: 350000,
+        rating: 4.4,
+        repo: "https://www.apple.com/apple-music/",
+        downloadUrl: "https://apps.microsoft.com/detail/9pf0245xjqks",
+        updated: "2026-02-15"
+    },
+    {
+        id: "apple-tv",
+        name: "Apple TV",
+        category: "Multimedia",
+        developer: "Apple Inc.",
+        shortDesc: "Stream Apple TV+, watch movies, and purchase premium shows on Windows.",
+        longDesc: "Apple TV for Windows is the official app to watch Apple TV+, buy or rent movies and TV shows, and access your personal purchases. It features 4K HDR playback and seamless integration with your Apple Account library.",
+        license: "Proprietary / Freeware",
+        version: "v1.4.0",
+        downloads: 280000,
+        rating: 4.2,
+        repo: "https://www.apple.com/apple-tv-app/",
+        downloadUrl: "https://apps.microsoft.com/detail/9np1phxrrlwl",
+        updated: "2026-02-15"
+    },
+    {
+        id: "apple-devices",
+        name: "Apple Devices",
+        category: "Utilities",
+        developer: "Apple Inc.",
+        shortDesc: "Official utility to sync, back up, and update Apple devices from Windows.",
+        longDesc: "Apple Devices for Windows is the dedicated modern app to manage your iPhone, iPad, and iPod from a Windows 10/11 PC. Easily sync music, movies, and TV shows, create local device backups, and update/restore iOS software.",
+        license: "Proprietary / Freeware",
+        version: "v1.4.0",
+        downloads: 190000,
+        rating: 4.1,
+        repo: "https://support.apple.com/en-us/109038",
+        downloadUrl: "https://apps.microsoft.com/detail/9np83r2vtq0c",
+        updated: "2026-02-15"
+    },
+    {
+        id: "samsung-smart-switch",
+        name: "Samsung Smart Switch",
+        category: "Utilities",
+        developer: "Samsung Electronics",
+        shortDesc: "Seamlessly migrate files and back up your Samsung Galaxy device on PC.",
+        longDesc: "Samsung Smart Switch for PC makes it easy to back up, restore, and transfer your contacts, photos, messages, and settings from your Galaxy mobile device to a Windows computer. It also lets you update your device's operating system firmware.",
+        license: "Proprietary / Freeware",
+        version: "v4.3.2406",
+        downloads: 640000,
+        rating: 4.6,
+        repo: "https://www.samsung.com/smartswitch/",
+        downloadUrl: "https://www.samsung.com/global/download/smartswitchwin/",
+        updated: "2024-06-26"
+    },
+    {
+        id: "samsung-flow",
+        name: "Samsung Flow",
+        category: "Utilities",
+        developer: "Samsung Electronics",
+        shortDesc: "Connect and share files or notifications between your Galaxy phone and PC.",
+        longDesc: "Samsung Flow delivers a seamless, secure connection between your smartphone and tablet or PC. Mirror your phone screen, transfer files, sync notifications, and unlock your PC using your mobile device's biometrics.",
+        license: "Proprietary / Freeware",
+        version: "v4.9.15",
+        downloads: 310000,
+        rating: 4.4,
+        repo: "https://www.samsung.com/global/galaxy/apps/samsung-flow/",
+        downloadUrl: "https://apps.microsoft.com/detail/9nblggh5gb0m",
+        updated: "2026-03-10"
+    },
+    {
+        id: "samsung-notes",
+        name: "Samsung Notes",
+        category: "Productivity",
+        developer: "Samsung Electronics",
+        shortDesc: "Sync and edit your Samsung Notes documents on your Windows computer.",
+        longDesc: "Samsung Notes for Windows allows you to create, edit, and organize notes on your computer, syncing them with your Galaxy devices. Draw with an active stylus, write text documents, record voice clips, and organize them into folders.",
+        license: "Proprietary / Freeware",
+        version: "v4.4.2",
+        downloads: 490000,
+        rating: 4.5,
+        repo: "https://www.samsung.com/",
+        downloadUrl: "https://apps.microsoft.com/detail/9nblggh43vvw",
+        updated: "2026-02-28"
+    },
+    {
+        id: "samsung-smartthings",
+        name: "SmartThings",
+        category: "Utilities",
+        developer: "Samsung Electronics",
+        shortDesc: "Control and monitor your smart home devices directly from Windows.",
+        longDesc: "SmartThings for PC lets you control and monitor your smart home appliances, lights, thermostats, and IoT security devices. Create automation routines, check device statuses, and manage smart speakers directly from your desktop.",
+        license: "Proprietary / Freeware",
+        version: "v1.0.120",
+        downloads: 220000,
+        rating: 4.3,
+        repo: "https://www.smartthings.com/",
+        downloadUrl: "https://apps.microsoft.com/detail/9n3zbh5v7hj6",
+        updated: "2026-04-05"
+    },
+    {
+        id: "samsung-quick-share",
+        name: "Quick Share",
+        category: "Utilities",
+        developer: "Samsung Electronics",
+        shortDesc: "P2P sharing utility to send photos, videos, and files to nearby devices.",
+        longDesc: "Quick Share is Samsung’s peer-to-peer file sharing utility for wireless transfers. Share photos, documents, and large videos with nearby Galaxy devices, Android smartphones, and Windows PCs instantly without an active internet connection.",
+        license: "Proprietary / Freeware",
+        version: "v1.2.5",
+        downloads: 580000,
+        rating: 4.7,
+        repo: "https://www.samsung.com/",
+        downloadUrl: "https://apps.microsoft.com/detail/9nblggh4r9nw",
+        updated: "2026-03-20"
+    },
+    {
+        id: "google-antigravity",
+        name: "Google Antigravity",
+        category: "Development",
+        developer: "Google LLC",
+        shortDesc: "Agentic command center and development platform for AI software agents.",
+        longDesc: "Google Antigravity is an agentic development environment and command center designed for the agent-first era. It enables launching, monitoring, and orchestrating powerful AI agents with multi-step reasoning, multi-file code editing, tool execution, and local workspace sync capabilities.",
+        license: "Proprietary / Freeware",
+        version: "v2.1.0",
+        downloads: 15000,
+        rating: 4.9,
+        repo: "https://github.com/google/antigravity",
+        downloadUrl: "https://antigravity.google",
+        updated: "2026-06-08"
+    },
+    {
+        id: "cursor",
+        name: "Cursor",
+        category: "Development",
+        developer: "Anysphere",
+        shortDesc: "AI-first code editor built as a fork of Visual Studio Code.",
+        longDesc: "Cursor is the AI-first code editor designed for pair programming. Built as a fork of VS Code, it includes built-in autocomplete, chat interface, and Cascade-style agentic edit features, enabling rapid software development using advanced LLM assistance.",
+        license: "Proprietary / Freeware",
+        version: "v0.45.8",
+        downloads: 920000,
+        rating: 4.8,
+        repo: "https://github.com/getcursor/cursor",
+        downloadUrl: "https://downloader.cursor.sh/builds/release/windows/x64",
+        updated: "2026-05-15"
+    },
+    {
+        id: "windsurf",
+        name: "Windsurf",
+        category: "Development",
+        developer: "Codeium",
+        shortDesc: "The first agentic AI-powered IDE built on the VS Code open source base.",
+        longDesc: "Windsurf is an AI-native code editor created by Codeium. It features Cascade, an agentic coding assistant that can plan and execute multi-file changes, run commands, and write tests, seamlessly integrating AI intelligence with developer workflow.",
+        license: "Proprietary / Freeware",
+        version: "v1.2.0",
+        downloads: 430000,
+        rating: 4.7,
+        repo: "https://github.com/codeium/windsurf",
+        downloadUrl: "https://windsurf-stable.codeium.com/api/update/win32-x64/stable/latest",
+        updated: "2026-05-20"
+    },
+    {
+        id: "android-studio",
+        name: "Android Studio",
+        category: "Development",
+        developer: "Google LLC",
+        shortDesc: "The official Integrated Development Environment (IDE) for Android development.",
+        longDesc: "Android Studio is the official IDE for Google's Android operating system, built on JetBrains' IntelliJ IDEA software. It offers a structured Gradle-based build system, high-performance emulator, code templates, and Gemini-based AI coding assistant for mobile developers.",
+        license: "Apache 2.0 / Freeware",
+        version: "v2024.1.1",
+        downloads: 1850000,
+        rating: 4.8,
+        repo: "https://android.googlesource.com/platform/tools/base",
+        downloadUrl: "https://developer.android.com/studio",
+        updated: "2026-05-10"
     }
 ];
 
@@ -982,6 +1192,20 @@ const APP_ICONS = {
     "google-drive": `<img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg" alt="Google Drive Icon">`,
     chromium: `<img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Chromium_Logo.svg" alt="Chromium Icon">`,
     chrome: `<img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/googlechrome.svg" alt="Google Chrome Icon">`,
+    itunes: `<img src="https://cdn.jsdelivr.net/npm/simple-icons@v12.0.0/icons/itunes.svg" alt="iTunes Icon">`,
+    icloud: `<img src="https://cdn.jsdelivr.net/npm/simple-icons@v12.0.0/icons/icloud.svg" alt="iCloud Icon">`,
+    "apple-music": `<img src="https://cdn.jsdelivr.net/npm/simple-icons@v12.0.0/icons/applemusic.svg" alt="Apple Music Icon">`,
+    "apple-tv": `<img src="https://cdn.jsdelivr.net/npm/simple-icons@v12.0.0/icons/appletv.svg" alt="Apple TV Icon">`,
+    "apple-devices": `<img src="https://cdn.jsdelivr.net/npm/simple-icons@v12.0.0/icons/apple.svg" alt="Apple Devices Icon">`,
+    "samsung-smart-switch": `<img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Smart_Switch_logo.png" alt="Samsung Smart Switch Icon">`,
+    "samsung-flow": `<img src="https://upload.wikimedia.org/wikipedia/commons/6/61/Samsung_Flow_wordmark.svg" alt="Samsung Flow Icon">`,
+    "samsung-notes": `<img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Samsung_Notes_icon_2025.svg" alt="Samsung Notes Icon">`,
+    "samsung-smartthings": `<img src="https://cdn.jsdelivr.net/npm/simple-icons@v12.0.0/icons/smartthings.svg" alt="SmartThings Icon">`,
+    "samsung-quick-share": `<img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Quickshare.svg" alt="Quick Share Icon">`,
+    "google-antigravity": `<svg viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%; display: block; border-radius: inherit;"><circle cx="12" cy="9" r="5" fill="url(#antigrav-grad)" opacity="0.9" /><path d="M5 16C5 16 8 19 12 19C16 19 19 16 19 16" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" /><path d="M8 13C8 13 10 15 12 15C14 15 16 13 16 13" stroke="#f472b6" stroke-width="1.5" stroke-linecap="round" /><circle cx="5" cy="8" r="1" fill="#60a5fa" /><circle cx="19" cy="11" r="1.5" fill="#f472b6" /><circle cx="12" cy="2" r="1" fill="#3b82f6" /><defs><linearGradient id="antigrav-grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#3b82f6" /><stop offset="50%" stop-color="#8b5cf6" /><stop offset="100%" stop-color="#ec4899" /></linearGradient></defs></svg>`,
+    cursor: `<img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Cursor_logo.svg" alt="Cursor Icon">`,
+    windsurf: `<img src="https://raw.githubusercontent.com/lobehub/lobe-icons/master/packages/static-svg/icons/windsurf.svg" alt="Windsurf Icon">`,
+    "android-studio": `<img src="https://cdn.jsdelivr.net/npm/simple-icons@v12.0.0/icons/androidstudio.svg" alt="Android Studio Icon">`,
 
     default: `<svg viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>`
 };
@@ -1437,7 +1661,7 @@ function incrementDownloads(appId) {
 // Trigger a dynamic text file download for fictional/generated catalog applications
 function triggerFictionalDownload(app) {
     const readmeContent = `==================================================
-${app.name} - Open Source Software (Simulation)
+${app.name} - Free & secure Software (Simulation)
 ==================================================
 
 Thank you for trying out the download simulator on RUHI Apps Store!
@@ -1452,7 +1676,7 @@ App Details:
 * Source Code Repo: ${app.repo}
 
 NOTE: This app is a generated realistic catalog entry to demonstrate
-a large open-source directory (1000+ apps). 
+a large free & secure app directory. 
 In a live production environment, this would trigger the actual binary.
 
 For curated real-world applications (like VLC, Brave, VSCodium, or 
