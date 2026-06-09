@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RUHI Apps Store - Download Premium Apps</title>
     <meta name="description" content="Discover and download the best, high-quality free and secure applications for Windows, Mac, and Linux. No trackers, no bloatware, 100% free & secure.">
-    <link rel="stylesheet" href="styles.css?v=2.1.0">
+    <link rel="stylesheet" href="styles.css?v=2.5.0">
 </head>
 <body>
     <!-- Background Animated Blobs -->
@@ -97,6 +97,7 @@
                     <div class="sorting-wrapper">
                         <label for="sortSelect">Sort by:</label>
                         <select id="sortSelect" class="sort-select">
+                            <option value="random" selected>Random</option>
                             <option value="downloads">Downloads (Popular)</option>
                             <option value="rating">Rating</option>
                             <option value="name">Name (A-Z)</option>
@@ -110,6 +111,9 @@
             <div class="apps-grid" id="appsGrid">
                 <!-- JS dynamically injects cards here -->
             </div>
+
+            <!-- Pagination Wrapper -->
+            <div class="pagination-wrapper" id="paginationWrapper"></div>
         </div>
     </section>
 
@@ -227,6 +231,6 @@
     <!-- Toast Feedback System -->
     <div class="toast-container" id="toastContainer"></div>
 
-    <script src="app.js?v=2.1.0"></script>
+    <script src="app.js?v=2.5.0"></script>
 </body>
 </html>
